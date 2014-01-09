@@ -1,7 +1,7 @@
 /*
- * jquery.mobile.inputassistant v1
+ * jquery.mobile.swiper v1
  *
- * Copyright (c) 2012, Abas Software AG, Volker Krebs, Stefan Gebhardt
+ * Copyright (c) 2012-2014, Abas Software AG, Volker Krebs, Stefan Gebhardt
  * Dual licensed under the MIT and GPL Version 2 licenses.
  * 
  * This widget is applied to all data-role="page" but only when a data-swipeleft or
