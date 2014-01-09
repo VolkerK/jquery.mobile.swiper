@@ -50,8 +50,8 @@
 		}
 	});
 
-	$(":jqmData(role='page')").live("pageinit", function () {
-		var page = $(this);
+	$(document).on("pageinit", function (event) {
+		var page = $(event.target);
 		var swleft = page.data('swipeleft');
 		var swright = page.data('swiperight');
 		if (swleft !== undefined || swright !== undefined) {
