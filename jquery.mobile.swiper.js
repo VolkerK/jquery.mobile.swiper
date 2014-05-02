@@ -30,9 +30,10 @@
 			// otherwise we should reload, because we have a dynamic webapp
 			var reloadPage = !(this.options.swipeleft.slice(0,1) == '#');
 			//console.log("swipe left to " + this.options.swipeleft + " (reload=" + reloadPage + ")");
-			$.mobile.changePage( this.options.swipeleft, { 
+			$.mobile.pageContainer.pagecontainer("change", this.options.swipeleft, { 
 				transition: "slide",
-				reloadPage: reloadPage,
+				reload: reloadPage,
+				allowSamePageTransition: true,
 				changeHash: false //avoid adding to history stack
 			} );
 		},
@@ -41,10 +42,11 @@
 			// otherwise we should reload, because we have a dynamic webapp
 			var reloadPage = !(this.options.swiperight.slice(0,1) == '#');
 			//console.log("swipe right to " + this.options.swiperight + " (reload=" + reloadPage + ")");
-			$.mobile.changePage( this.options.swiperight, { 
+			$.mobile.pageContainer.pagecontainer("change", this.options.swiperight, { 
 				transition: "slide",
 				reverse: true,
-				reloadPage: reloadPage,
+				reload: reloadPage,
+				allowSamePageTransition: true,
 				changeHash: false //avoid adding to history stack
 			} );
 		}
