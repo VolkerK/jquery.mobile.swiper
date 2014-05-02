@@ -12,7 +12,7 @@
 </head>
 <body>
 
-<div data-role="page" data-swipeleft="page2.html" id="page1">
+<div data-role="page" data-swiperight="index.html" data-swipeleft="page2.html" id="page1">
 
 	<div data-role="header">
 		<a href="#" data-rel="back">Back</a>
@@ -20,6 +20,8 @@
 	</div><!-- /header -->
 
 	<div data-role="content">
+		When swiping back to index, we have a duplicate id in the DOM. But only when served via an http server. When run local (file://) it works fine,
+		but then sometimes the back Button goes to the wrong page.
 	</div><!-- /content -->
 
 </div><!-- /page -->
