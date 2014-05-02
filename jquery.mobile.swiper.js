@@ -1,5 +1,5 @@
 /*
- * jquery.mobile.swiper v1
+ * jquery.mobile.swiper v1.1
  *
  * Copyright (c) 2012-2014, Abas Software AG, Volker Krebs, Stefan Gebhardt
  * Dual licensed under the MIT and GPL Version 2 licenses.
