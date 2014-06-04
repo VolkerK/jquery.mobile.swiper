@@ -33,6 +33,7 @@
 			$.mobile.changePage( this.options.swipeleft, { 
 				transition: "slide",
 				reloadPage: reloadPage,
+				allowSamePageTransition: true,
 				changeHash: false //avoid adding to history stack
 			} );
 		},
@@ -45,6 +46,7 @@
 				transition: "slide",
 				reverse: true,
 				reloadPage: reloadPage,
+				allowSamePageTransition: true,
 				changeHash: false //avoid adding to history stack
 			} );
 		}
