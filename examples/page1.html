@@ -21,7 +21,8 @@
 
 	<div data-role="content">
 		When swiping back to index, we have a duplicate id in the DOM. But only when served via an http server. When run local (file://) it works fine,
-		but then sometimes the back Button goes to the wrong page.
+		but then sometimes the back Button goes to the wrong page.<br/>
+		This seems to be the issue: <a href="https://github.com/jquery/jquery-mobile/issues/3249">https://github.com/jquery/jquery-mobile/issues/3249</a>
 	</div><!-- /content -->
 
 </div><!-- /page -->
